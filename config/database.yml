@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: sample_app_development
   pool: 5
-  username: sample_app
+  username: aspadmin
   password: Pa55w0rd
 
 test:
@@ -25,7 +25,7 @@ test:
   encoding: unicode
   database: sample_app_test
   pool: 5
-  username: sample_app
+  username: aspadmin
   password: Pa55w0rd
 
 production:
@@ -33,5 +33,5 @@ production:
   encoding: unicode
   database: sample_app_production
   pool: 5
-  username: sample_app
+  username: aspadmin
   password: Pa55w0rd
