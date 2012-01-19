@@ -1,13 +1,13 @@
 SampleApp::Application.routes.draw do
+  # match '/about',   :to => 'pages#about'
+  # match actually /about to the action "about" on pages_controller but also by default creates named ro
+  # about_path => '/about'
+  # about_url  => 'http://localhost:3000/about'
+  
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
 
   root :to => 'pages#home'
-
-#  get "pages/home"
-#  get "pages/contact"
-#  get "pages/about"
-#  get "pages/help"
   
 end
