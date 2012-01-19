@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  
+  resources :users
 
   # match '/about',   :to => 'pages#about'
   # match actually /about to the action "about" on pages_controller but also by default creates named ro
@@ -10,7 +12,6 @@ SampleApp::Application.routes.draw do
   match '/help',    :to => 'pages#help'
 
   match '/signup',  :to => 'users#new'
-  get "users/new"
 
   root :to => 'pages#home'
   
