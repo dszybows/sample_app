@@ -6,6 +6,7 @@ gem 'pg'
 group :development do
   gem 'rspec-rails'
   gem "annotate"
+  gem 'gravatar_image_tag'
 end
 
 group :test do
@@ -15,8 +16,8 @@ group :test do
   gem 'autotest'
   gem 'autotest-rails-pure'
   gem 'autotest-fsevent'
-  # gem 'autotest-growl'
-  
+  gem 'factory_girl_rails'
+  gem 'gravatar_image_tag'
 end
 
 gem 'jquery-rails'
