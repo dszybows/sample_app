@@ -36,7 +36,7 @@ Spork.prefork do
     config.infer_base_class_for_anonymous_controllers = false
     
     def test_sign_in(user)
-      controller.sign_in(user)
+       controller.current_user = user
     end
 
     def integration_sign_in(user)

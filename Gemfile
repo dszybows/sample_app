@@ -2,11 +2,13 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 gem 'pg'
+gem 'will_paginate'
+gem 'gravatar_image_tag'
 
 group :development do
   gem 'rspec-rails'
   gem "annotate"
-  gem 'gravatar_image_tag'
+  gem 'faker'
 end
 
 group :test do
@@ -17,7 +19,6 @@ group :test do
   gem 'autotest-rails-pure'
   gem 'autotest-fsevent'
   gem 'factory_girl_rails'
-  gem 'gravatar_image_tag'
 end
 
 gem 'jquery-rails'
