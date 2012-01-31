@@ -16,6 +16,9 @@ class User < ActiveRecord::Base
   attr_accessor :password # virtual attribute
   attr_accessible :name, :email, :password, :password_confirmation
 
+  # relations
+  has_many :microposts, :dependent => :destroy
+
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   # validation of not null
@@ -52,6 +55,10 @@ class User < ActiveRecord::Base
     (user && user.salt == cookie_salt) ? user : nil
   end
   
+  def feed
+    # This is preliminary. See Chapter 12 for the full implementation.
+    Micropost.where("user_id = ?", id)
+  end
 
   private # All methodes defined after are usable only by object itself
 
