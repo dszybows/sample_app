@@ -38,8 +38,14 @@ GEM
       sys-uname
     autotest-rails-pure (4.1.2)
     builder (3.0.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.2.0)
     diff-lcs (1.1.3)
     erubis (2.7.0)
+    execjs (1.2.13)
+      multi_json (~> 1.0)
     factory_girl (2.4.2)
       activesupport
     factory_girl_rails (1.5.0)
@@ -104,6 +110,12 @@ GEM
       activesupport (~> 3.0)
       railties (~> 3.0)
       rspec (~> 2.7.0)
+    sass (3.1.12)
+    sass-rails (3.1.5)
+      actionpack (~> 3.1.0)
+      railties (~> 3.1.0)
+      sass (~> 3.1.10)
+      tilt (~> 1.3.2)
     spork (0.8.5)
     sprockets (2.0.3)
       hike (~> 1.2)
@@ -117,6 +129,9 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.31)
+    uglifier (1.2.1)
+      execjs (>= 0.3.0)
+      multi_json (>= 1.0.2)
     webrat (0.7.3)
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
@@ -131,6 +146,7 @@ DEPENDENCIES
   autotest
   autotest-fsevent
   autotest-rails-pure
+  coffee-script
   factory_girl_rails
   faker
   gravatar_image_tag
@@ -138,6 +154,8 @@ DEPENDENCIES
   pg
   rails (= 3.1.3)
   rspec-rails
+  sass-rails
   spork
+  uglifier
   webrat
   will_paginate

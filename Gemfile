@@ -5,6 +5,15 @@ gem 'pg'
 gem 'will_paginate'
 gem 'gravatar_image_tag'
 
+
+# Asset template engines
+gem 'sass-rails'
+gem 'coffee-script'
+gem 'uglifier'
+
+gem 'jquery-rails'
+
+
 group :development do
   gem 'rspec-rails'
   gem "annotate"
